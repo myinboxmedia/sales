@@ -1,0 +1,531 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Sales Request - MiM">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Sales Request - MiM</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/starter-template/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .custom-file-input.selected:lang(en)::after {
+          content: "" !important;
+        }
+
+        .custom-file {
+          overflow: hidden;
+        }
+
+        .custom-file-input {
+          white-space: nowrap;
+        }
+
+        #customFileInput::before {
+          content: "Template File";
+          position: absolute;
+          z-index: 2;
+          display: block;
+          background-color: #eee;
+          width: 110px;
+        }
+        #customFileInput::before:hover{
+          background-color:  #ced4da;
+        }
+
+        .rounded-4 { border-radius: .5rem; }
+        .rounded-5 { border-radius: .75rem; }
+        .rounded-6 { border-radius: 1rem; }
+
+        /*  */
+
+        .animate-pulse {
+              animation: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite
+          }
+
+          @keyframes pulse {
+              50% {
+                  opacity: .9
+              }
+          }
+
+    </style>
+    
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+  
+    <header class="d-flex justify-content-center py-3 shadow-sm sticky-top bg-white">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <span class="fs-4 fw-bold text-muted">Sales Request Form</span>
+      </a>
+    </header>
+    
+<div class="col-lg-10 mx-auto p-3 py-md-5">
+  <!-- <header class="d-flex align-items-center justify-content-between pb-3 mb-5 border-bottom text-center">
+    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+      <span class="fs-4 fw-bold">Sales Request Form</span>
+    </a>
+    <a href="#" class="btn btn-outline-primary" tabindex="-1" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+      <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+      <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+    </svg> New Account Creation</a>
+  </header> -->
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="card border-0 rounded-6 shadow">
+          <div class="card-body">
+              <!--  -->
+              <div class="row align-items-center justify-content-center">
+                 <!--  -->
+                 <div class="col-lg-6">
+                    <div class="animate-pulse">
+                      <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_fytm1esb.json"  background="transparent"  speed="1"  style="width:100%; height:auto;"  loop  autoplay></lottie-player>
+                    </div>
+                 </div>
+                 <!--  -->
+
+                <div class="col-lg-6">
+                   <!--  -->
+                   <div class="row">
+                     <div class="col-12 mb-3">
+                       <div class="card card-body border-0 rounded-6 shadow">
+                          <!--  -->
+                          <div class="btn-group col-lg-12 my-3" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradiotp" id="btnradio3" autocomplete="off" value="btnradiosms">
+                            <label class="btn btn-outline-primary" for="btnradio3"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                              </svg> SMS</label>
+                          
+                            <input type="radio" class="btn-check" name="btnradiotp" id="btnradio4" autocomplete="off" value="btnradioEmails">
+                            <label class="btn btn-outline-primary" for="btnradio4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                              </svg> Emails</label>
+              
+                              <input type="radio" class="btn-check" name="btnradiotp" id="btnradio5" autocomplete="off" value="btnradioWhatsapp">
+                              <label class="btn btn-outline-primary" for="btnradio5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                              </svg> Whatsapp</label>
+              
+                              <input type="radio" class="btn-check" name="btnradiotp" id="btnradio6" autocomplete="off" value="btnradioApp">
+                              <label class="btn btn-outline-primary" for="btnradio6"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                              </svg> App</label>
+              
+                              <input type="radio" class="btn-check" name="btnradiotp" id="btnradio7" autocomplete="off" value="btnradioOBD">
+                              <label class="btn btn-outline-primary" for="btnradio7"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                                <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                              </svg> OBD / IVR</label>
+                          </div>
+                          <!--  -->
+
+                          <!--  -->
+                           <div class="btn-group col-lg-12 mb-3 block-a" role="group" aria-label="Basic radio toggle button group" style="display: none">
+                              <input type="radio" class="btn-check" name="btnradioTrans" id="btnradio20" autocomplete="off" value="btnradioRecharge">
+                              <label class="btn btn-outline-primary" for="btnradio20"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                              </svg> Recharge</label>
+                            
+                              <input type="radio" class="btn-check" name="btnradioTrans" id="btnradio21" autocomplete="off" value="btnradioCampaigns">
+                              <label class="btn btn-outline-primary" for="btnradio21"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 16 16">
+                                  <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"/>
+                                </svg> Campaigns</label>
+                            </div>
+
+                          <!--  -->
+                          <div class="btn-group col-lg-12 mb-3 block-b" role="group" aria-label="Basic radio toggle button group" style="display: none">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" value="btnradioExisting">
+                            <label class="btn btn-outline-primary" for="btnradio1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                              <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg> Existing A/C</label>
+                          
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" value="btnradioNew">
+                            <label class="btn btn-outline-primary" for="btnradio2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                              <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                            </svg> New A/C </label>
+                          </div>
+
+                          <!--  -->
+                          <!-- <div class="btn-group col-lg-12 block-c" role="group" aria-label="Basic radio toggle button group" style="display: none">
+                            <input type="radio" class="btn-check" name="btnradiSub" id="btnradio8" autocomplete="off" value="btnradioGSM">
+                            <label class="btn btn-outline-primary" for="btnradio8"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+                              <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/>
+                              <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+                            </svg> GSM</label>
+                          
+                            <input type="radio" class="btn-check" name="btnradiSub" id="btnradio9" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio9"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                              <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                            </svg> Operator</label>
+              
+                              <input type="radio" class="btn-check" name="btnradiSub" id="btnradio10" autocomplete="off">
+                              <label class="btn btn-outline-primary" for="btnradio10"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-dots" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg> SMPP</label>
+                          </div> -->
+
+                          <!-- <hr class="my-3"> -->
+
+                          <!--  -->
+                          <div class="row g-lg-2">
+                            <div class="col-lg-6">
+                              <div class="form-floating my-2 block-d" style="display: none">
+                                <select name="ddlEmployee" id="ddlEmployee" class="form-select">
+                                    <option value="0">-- select --</option>
+                                    <option value="19">Ammar Ahmad</option>
+                                    <option value="21">Anirudh Saxena</option>
+                                    <option value="16">Ankush Togra</option>
+                                    <option value="1">Ayas Ul rehman</option>
+                                    <option value="7">Girish Lalwani</option>
+                                    <option value="4">Ishita Dhalla</option>
+                                    <option value="18">Joshil Sharma</option>
+                                    <option value="5">Madhur Negi</option>
+                                    <option value="15">Prateek Bakshi</option>
+                                    <option value="2">Ravi Srivastava</option>
+                                    <option value="10">Rupali Biswas</option>
+                                    <option value="6">Sangram Samantray</option>
+                                    <option value="8">Sapna Shetty</option>
+                                    <option value="13">Satya Narayana Bhuti</option>
+                                    <option value="11">Sejal Gupta</option>
+                                    <option value="12">Shivani Kusuri</option>
+                                    <option value="9">Swarnika Khatri</option>
+                                    <option value="14">Swati Khera</option>
+                                    <option value="17">Tamanna Khan</option>
+                                    <option value="23">Tanweer Hasan</option>
+                                    <option value="20">Varun</option>
+                                    <option value="3">Vikas&nbsp; Walia&nbsp;</option>
+                                    <option value="22">Yusuf Hasan</option>
+                                </select>                   
+                                <label for="floatingSelect">Sales Executive</label>
+                              </div>
+                            </div>
+                            <!--  -->
+                            <div class="col-lg-6">
+                              <div class="form-floating my-2 block-e" style="display: none">
+                                    <select name="ddlproductsubgroup" id="ddlproductsubgroup" class="form-select">
+                                      <option value="0">--Select--</option>
+                                      <option value="5">GSM</option>
+                                      <option value="6">Operator</option>
+                                      <option value="7">SMPP</option>
+                                    </select>
+                                  <label for="ddlproductsubgroup">Product Sub Group</label>
+                              </div>
+                            </div>
+                              <!--  -->
+                                <div class="col-lg-6">
+                                  <div class="form-floating mb-2 block-g" style="display: none">
+                                      <input name="txtCompany" type="text" id="txtCompany" class="form-control" placeholder="Company Name">
+                                      <label for="txtCompany">Company Name</label>
+                                  </div>
+                              </div>
+                              <!--  -->
+                              <div class="col-lg-6">
+                                  <div class="form-floating mb-2 block-h" style="display: none">
+                                      <input name="txtcustomername" type="text" id="txtcustomername" class="form-control" placeholder="Client Name">
+                                      <label for="txtcustomername">Client Name</label>
+                                  </div>
+                              </div>
+                              <!--  -->
+                              <div class="col-lg-6">
+                                <div class="form-floating mb-2 block-i" style="display: none">
+                                      <input name="txtPhone2" type="tel" id="txtPhone2" class="form-control" onkeypress="return onlyNumberKey(event)" placeholder="Mobile Number" maxlength="10" />
+                                      <label for="txtPhone2">Mobile Number</label>
+                                </div>
+                              </div>
+                              <!--  -->
+                              <div class="col-lg-6">
+                                <div class="form-floating mb-2 block-j" style="display: none">
+                                    <input name="txtEmailId" type="text" id="txtEmailId" class="form-control" PlaceHolder="Email Address" />
+                                    <label for="txtEmailId">Email Address</label>
+                                </div>
+                              </div>
+                              <!--  -->
+                               <!--  -->
+                             <div class="col-lg-12">
+                                  <div class="form-floating mb-2 block-f" style="display: none">
+                                      <input name="txtUserId" type="text" id="txtUserId" class="form-control" placeholder="User Id">
+                                      <label for="txtUserId">User Id</label>
+                                  </div>
+                             </div>
+                          <!--  -->
+                          </div>
+                          <!--  -->
+
+                          <!-- <hr class="my-3"> -->
+
+                          <div class="row block-k g-lg-2" style="display: none">
+                            <!--  -->
+                            <div class="col-lg-12">
+                              <div class="form-floating mb-2">
+                                  <textarea name="txtmsg" rows="2" cols="20" id="txtmsg" class="form-control" placeholder="SMS Text"></textarea>
+                                  <label for="txtmsg">SMS Text</label>
+                              </div>
+                            </div>
+        
+                            <!--  -->
+                            <div class="col-lg-6">
+                              <div class="form-floating">
+                                  <input name="txtQuantity" type="text" id="txtQuantity" onkeypress="return onlyNumberKey(event)" class="form-control" placeholder="Quantity">
+                                <label for="txtQuantity">Quantity</label>
+                              </div>
+                            </div>
+                            <!--  -->
+        
+                            <div class="col-lg-6">
+                                <div class="form-floating">
+                                    <input name="txtRate" type="text" maxlength="10" id="txtRate" onkeypress="return onlydecimalKey(event)" class="form-control" placeholder="Rate">
+                                    <label for="txtRate">Rate</label>
+                                </div>
+                            </div>
+                            <!--  -->
+                            
+                            <div class="input-group my-3">
+                              <input type="radio" class="btn-check" name="btnradioType" id="btnradio12" autocomplete="off">
+                              <label class="btn btn-outline-primary" for="btnradio12"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"/>
+                              </svg> Cash</label>
+                            
+                              <input type="radio" class="btn-check" name="btnradioType" id="btnradio13" autocomplete="off">
+                              <label class="btn btn-outline-primary" for="btnradio13"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+                                <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+                                <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+                                <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+                              </svg> PO</label>
+                  
+                                <input type="radio" class="btn-check" name="btnradioType" id="btnradio14" autocomplete="off">
+                              <label class="btn btn-outline-primary" for="btnradio14"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                              </svg> Email</label>
+                  
+                              <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                            </div>
+  
+                          </div>
+  
+                          <!-- <hr class="my-3"> -->
+                          
+                          <div class="row block-l g-lg-2" style="display: none">
+                            <div class="col-lg-6">
+                                 <div id="dvPEID" class="form-floating mb-2">
+                                   <input name="txtPEID" type="text" id="txtPEID" class="form-control" placeholder="PEID">
+                                   <label for="txtPEID">PEID</label>
+                                 </div>
+                             </div>
+                             <!--  -->
+                             <div class="col-lg-6">
+                                 <div id="dvSenderId" class="form-floating mb-2">
+                                   <input name="txtsenderid" type="text" id="txtsenderid" class="form-control" placeholder="Sender Id">
+                                   <label for="txtsenderid">Sender Id</label>
+                                 </div>
+                             </div>
+                             <!--  -->
+                             <div class="col-lg-12">
+                               <div id="dvTemplateId" class="form-floating mb-2">
+                                   <input name="txtTemplateId" type="text" id="txtTemplateId" class="form-control" placeholder="Template Id">
+                                   <label for="txtTemplateId">Template Id</label>
+                               </div>
+                             </div>
+         
+                             <!--  -->
+                             <div class="col-lg-12">
+                               <div class="mb-1">
+                                 <label for="formFile" class="form-label d-none">Default file input example</label>
+                                 <input class="form-control form-control-lg" type="file" id="customFileInput">
+                               </div>
+                             </div>
+                             <!--  -->
+                             <div class="col-lg-12">
+                              <div id="dvTemplateId" class="form-floating mb-2">
+                                  <input name="txtTestNo" type="text" id="txtTestNo" class="form-control" placeholder="Test No">
+                                  <label for="txtTestNo">Test No</label>
+                              </div>
+                            </div>
+        
+                            <!--  -->
+                            <div class="col-lg-12">
+                              <div id="dvTemplateId" class="form-floating mb-2">
+                                  <input name="txtDataLoc" type="text" id="txtDataLoc" class="form-control" placeholder="Data Location & Category">
+                                  <label for="txtDataLoc">Data Location & Category</label>
+                              </div>
+                            </div>
+        
+                            <!--  -->
+                          </div>
+
+                          <div class="row g-lg-2"> 
+
+                            <input type="submit" name="btnSave" value="Submit" id="btnSave" class="w-100 btn btn-primary btn-lg mt-3 btnSub" style="display: none;">
+         
+                          </div>
+
+                       </div>
+                     </div>
+                     <!--  -->
+
+                   </div>
+
+                </div>
+               <!--  -->
+            </div>
+              <!--  -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New Account Creation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="btn-group col-lg-12 mb-4" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradiNew" id="btnradio15" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio15"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+              </svg> SMS</label>
+          
+            <input type="radio" class="btn-check" name="btnradiNew" id="btnradio16" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio16"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+              </svg> Emails</label>
+
+              <input type="radio" class="btn-check" name="btnradiNew" id="btnradio17" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btnradio17"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+              </svg> Whatsapp</label>
+
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="pt-4 text-muted border-top text-center">
+  <div class="container">
+    <p class="m-0">Created by the Myinboxmedia &middot; &copy; 2021 </p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<script>
+  $(document).ready(function() {
+  $('input[class=btn-check]:radio').change(function(e) {
+    let value = e.target.value.trim()
+
+    $('[class^="block"]').css('display', 'none');
+    
+    switch (value) {
+      case 'btnradiosms':
+        $('.block-a').show()
+        break;
+      case 'btnradioRecharge':
+        $('.block-b').show()
+        break;
+      case 'btnradioExisting':
+        $('.block-d, .block-e, .block-f, .block-g, .block-h, .block-i, .block-j, .block-k, .btnSub').show()
+        break;
+      case 'btnradioNew':
+        $('.block-d, .block-e, .block-g, .block-h, .block-i, .block-j, .block-k, .btnSub').show()
+        break;
+      case 'btnradioCampaigns':
+        $('.block-d, .block-e, .block-g, .block-h, .block-i, .block-j, .block-k, .block-l, .btnSub').show()
+        break;
+        // 
+      case 'btnradioWhatsapp':
+      $('.block-a').show()
+        break;
+      // case 'btnradioWhatsapp':
+      // $('.block-a').show()
+      //   break;
+        default:
+        break;
+    }
+  })
+})
+
+</script>
+
+
+
+<script>
+  var FormStuff = {
+  
+  init: function() {
+    this.applyConditionalRequired();
+    this.bindUIActions();
+  },
+  
+  bindUIActions: function() {
+    $("input[type='radio']").on("change", this.applyConditionalRequired);
+  },
+  
+  applyConditionalRequired: function() {
+  	
+    $(".require-if-active").each(function() {
+      var el = $(this);
+      if ($(el.data("require-pair")).is(":checked")) {
+        el.prop("required", true);
+      } else {
+        el.prop("required", false);
+      }
+    });
+    
+  }
+  
+};
+
+FormStuff.init();
+</script>
+
+  </body>
+</html>
