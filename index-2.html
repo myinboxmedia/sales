@@ -1,50 +1,102 @@
 
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Sales Request - MiM">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Sales</title>
+    <title>Sales Request - MiM</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+    <link rel="canonical" href="#">
+
     
+
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
-     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <!-- Favicons -->
+    <!-- <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
     <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico"> -->
     <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .custom-file-input.selected:lang(en)::after {
+          content: "" !important;
+        }
+
+        .custom-file {
+          overflow: hidden;
+        }
+
+        .custom-file-input {
+          white-space: nowrap;
+        }
+
+        #customFileInput::before {
+          content: "Template File";
+          position: absolute;
+          z-index: 2;
+          display: block;
+          background-color: #eee;
+          width: 110px;
+        }
+        #customFileInput::before:hover{
+          background-color:  #ced4da;
+        }
+
+        .rounded-4 { border-radius: .5rem; }
+        .rounded-5 { border-radius: .75rem; }
+        .rounded-6 { border-radius: 1rem; }
+
+        /*  */
+
+        .fillCard {height: 78vh;}
+
+        .animate-pulse {
+              animation: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite
+          }
+
+          @keyframes pulse {
+              50% {
+                  opacity: .9
+              }
+          }
+
+    </style>
     
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <!-- <link href="starter-template.css" rel="stylesheet"> -->
   </head>
-<body class="d-flex h-100 text-center bg-light">
+  <body class="bg-light">
+  
+  <header class="d-flex justify-content-center py-3 shadow-sm sticky-top bg-dark">
+    <a href="/" class="d-flex align-items-center text-decoration-none">
+      <span class="fs-4 fw-bold text-white text-uppercase">Sales Request Form</span>
+    </a>
+  </header>
     
-<div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <main>
     <!-- Start Container -->
-    <div class="container-fluid h-100">
-      <div class="row justify-content-center py-0 h-100">
-        <div class="col-lg-12">
+    <div class="container-fluid">
+      <div class="row justify-content-center py-4">
+        <div class="col-lg-10">
           <!-- Starting Columns  -->
-          <div class="card bordered rounded-6 h-100 fillCard">
-            <div class="card-body p-0 p-lg-2">
+          <div class="card border-0 rounded-6 shadow fillCard">
+            <div class="card-body">
                 <!--  -->
-                <div class="row align-items-center justify-content-center h-100">
+                <div class="row align-items-center justify-content-center">
                    <!--  -->
                    <div class="col-lg-4">
-                      <h5 class="text-dark mb-3 fw-bold d-block d-sm-none">Sales Request Form</h5>
-                      <div class="animate-pulse d-none d-sm-block">
+                      <div class="animate-pulse">
                         <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_fytm1esb.json"  background="transparent"  speed="1"  style="width:100%; height:auto;"  loop  autoplay></lottie-player>
                       </div>
                    </div>
@@ -54,31 +106,28 @@
                      <!--  -->
                      <div class="row">
                        <div class="col-12 mb-3">
-                         <div class="card shadow formFill">
-                            <div class="card-header">
-                              <h5 class="m-0 py-2 text-dark fw-bold d-none d-sm-block">Sales Request Form</h5>
-                               <!--  -->
-                                  <div class="btn-group col-12 flex-wrap mt-3 mb-2" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" class="btn-check" name="btnradiotp" id="btnradio3" autocomplete="off" value="btnradiosms">
-                                    <label class="btn btn-outline-primary" for="btnradio3"> <i class="bi bi-chat-left-text"></i> SMS</label>
-
-                                    <input type="radio" class="btn-check" name="btnradiotp" id="btnradio5" autocomplete="off" value="btnradioWhatsapp">
-                                    <label class="btn btn-outline-primary" for="btnradio5"> <i class="bi bi-whatsapp"></i> Whatsapp</label>
-
-                                    <input type="radio" class="btn-check" name="btnradiotp" id="btnradio7" autocomplete="off" value="btnradioOBD">
-                                    <label class="btn btn-outline-primary" for="btnradio7"> <i class="bi bi-headset"></i> OBD / IVR</label>
-                                
-                                    <input type="radio" class="btn-check" name="btnradiotp" id="btnradio4" autocomplete="off" value="btnradioEmails">
-                                    <label class="btn btn-outline-primary" for="btnradio4"> <i class="bi bi-envelope"></i> Emails</label>
-                    
-                                    <input type="radio" class="btn-check" name="btnradiotp" id="btnradio6" autocomplete="off" value="btnradioApp">
-                                    <label class="btn btn-outline-primary" for="btnradio6"> <i class="bi bi-phone"></i> App</label>
-                                </div>
-                                <!--  -->
-                            </div>
-                          <div class="card-body">
+                         <div class="card card-body border-0 rounded-6 shadow">
                             <!--  -->
-                             <div class="btn-group col-12 flex-wrap mb-3 block-a" role="group" aria-label="Basic radio toggle button group" style="display: none">
+                            <div class="btn-group col-lg-12 my-3" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradiotp" id="btnradio3" autocomplete="off" value="btnradiosms">
+                                <label class="btn btn-outline-primary" for="btnradio3"> <i class="bi bi-chat-left-text"></i> SMS</label>
+  
+                                <input type="radio" class="btn-check" name="btnradiotp" id="btnradio5" autocomplete="off" value="btnradioWhatsapp">
+                                <label class="btn btn-outline-primary" for="btnradio5"> <i class="bi bi-whatsapp"></i> Whatsapp</label>
+  
+                                <input type="radio" class="btn-check" name="btnradiotp" id="btnradio7" autocomplete="off" value="btnradioOBD">
+                                <label class="btn btn-outline-primary" for="btnradio7"> <i class="bi bi-headset"></i> OBD / IVR</label>
+                            
+                                <input type="radio" class="btn-check" name="btnradiotp" id="btnradio4" autocomplete="off" value="btnradioEmails">
+                                <label class="btn btn-outline-primary" for="btnradio4"> <i class="bi bi-envelope"></i> Emails</label>
+                
+                                <input type="radio" class="btn-check" name="btnradiotp" id="btnradio6" autocomplete="off" value="btnradioApp">
+                                <label class="btn btn-outline-primary" for="btnradio6"> <i class="bi bi-phone"></i> App</label>
+                            </div>
+                            <!--  -->
+  
+                            <!--  -->
+                             <div class="btn-group col-lg-12 mb-3 block-a" role="group" aria-label="Basic radio toggle button group" style="display: none">
                                 <input type="radio" class="btn-check" name="btnradioTrans" id="btnradio20" autocomplete="off" value="btnradioRecharge">
                                 <label class="btn btn-outline-primary" for="btnradio20"> <i class="bi bi-credit-card-2-front"></i> Recharge</label>
                               
@@ -87,7 +136,7 @@
                               </div>
   
                             <!--  -->
-                            <div class="btn-group col-12 flex-wrap mb-3 block-b" role="group" aria-label="Basic radio toggle button group" style="display: none">
+                            <div class="btn-group col-lg-12 mb-3 block-b" role="group" aria-label="Basic radio toggle button group" style="display: none">
                               <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" value="btnradioExisting">
                               <label class="btn btn-outline-primary" for="btnradio1"><i class="bi bi-person-check"></i> Existing A/C</label>
                             
@@ -215,7 +264,7 @@
           
                               <!--  -->
                               <div class="col-lg-6">
-                                <div class="form-floating mb-2">
+                                <div class="form-floating">
                                     <input name="txtQuantity" type="text" id="txtQuantity" onkeypress="return onlyNumberKey(event)" class="form-control" placeholder="Quantity">
                                   <label for="txtQuantity">Quantity</label>
                                 </div>
@@ -223,7 +272,7 @@
                               <!--  -->
           
                               <div class="col-lg-6">
-                                  <div class="form-floating mb-2">
+                                  <div class="form-floating">
                                       <input name="txtRate" type="text" maxlength="10" id="txtRate" onkeypress="return onlydecimalKey(event)" class="form-control" placeholder="Rate">
                                       <label for="txtRate">Rate</label>
                                   </div>
@@ -260,7 +309,7 @@
                                <div class="col-lg-12">
                                  <div class="mb-1">
                                    <label for="formFile" class="form-label d-none">Default file input example</label>
-                                   <input class="form-control form-control-lg position-relative" type="file" id="customFileInput">
+                                   <input class="form-control form-control-lg" type="file" id="customFileInput">
                                  </div>
                                </div>
                                <!--  -->
@@ -307,9 +356,8 @@
                               </div>
                             </div>
                             <!--  -->
-                           </div>
+                         </div>
                        </div>
-                      </div>
                        <!--  -->
   
                      </div>
@@ -327,11 +375,13 @@
     <!-- End Container  -->
   </main>
 
-  <footer class="mt-auto text-dark">
-    <p class="m-0 mt-lg-2">Created by : <span class="text-muted fw-bold">Myinboxmedia &middot;</span> &copy; 2021 </p>
-  </footer>
-</div>
-    
+<footer class="py-2 text-muted border-top text-center">
+  <div class="container">
+    <p class="m-0">Created by : <span class="text-muted fw-bold">Myinboxmedia &middot;</span> &copy; 2021 </p>
+  </div>
+</footer>
+
+
 <!-- Global Script -->
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
